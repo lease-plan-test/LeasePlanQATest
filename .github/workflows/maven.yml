@@ -2,9 +2,9 @@ name: LeasePlanQATest
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   test:
@@ -31,9 +31,9 @@ jobs:
 
       - name: Publish Test Report
         if: always()
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          target_branch: master
-          build_dir: public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: lease-plan-test/LPTestReport
+          publish_branch: main  # default: gh-pages
+          publish_dir: ./public
