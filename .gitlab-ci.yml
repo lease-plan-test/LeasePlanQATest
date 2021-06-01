@@ -1,0 +1,10 @@
+java:
+  stage: test
+  script:
+    - mvn clean test
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - target/lp_report.html
+        - target/lp_reports/*
