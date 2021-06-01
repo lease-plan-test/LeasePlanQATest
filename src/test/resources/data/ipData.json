@@ -1,0 +1,50 @@
+[
+  {
+    "ip": "45.56.152.38",
+    "continent_name": "Asia",
+    "country_name": "Hong Kong SAR China",
+    "city": "Hong Kong",
+    "calling_code": "852",
+    "is_eu": false
+  },
+  {
+    "ip": "43.241.61.247",
+    "continent_name": "Asia",
+    "country_name": "India",
+    "city": "Mumbai",
+    "calling_code": "91",
+    "is_eu": false
+  },
+  {
+    "ip": "85.203.44.47",
+    "continent_name": "Europe",
+    "country_name": "Netherlands",
+    "city": "Diemen",
+    "calling_code": "31",
+    "is_eu": true
+  },
+  {
+    "ip": "151.101.192.81",
+    "continent_name": "North America",
+    "country_name": "United States",
+    "city": "San Francisco",
+    "calling_code": "1",
+    "is_eu": false
+  },
+  {
+    "ip": "45.133.7.30",
+    "continent_name": "Oceania",
+    "country_name": "New Zealand",
+    "city": "Auckland",
+    "calling_code": "64",
+    "is_eu": false
+  },
+  {
+    "ip": "185.217.117.147",
+    "continent_name": "Europe",
+    "country_name": "United Kingdom",
+    "city": "Pinner",
+    "calling_code": "44",
+    "is_eu": true
+  }
+]
