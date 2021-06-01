@@ -36,16 +36,16 @@ and follow the steps in the file.
 It will ask you type of execution where you can interactively select an option.
 
 ### 2) Local execution using commands :
-This is where you can execute the tests using maven or docker commands.
+This is where you can execute the tests using maven or docker commands.    
+
 #### a) Local execution with UI
-Here the tests will run with UI where Google Chrome browser will launch.    
-You can see the execution real time.
+Here the tests will download dependecy locally and execute on host machine.    
 ```
 mvn clean test
-```
+```    
+    
 #### b) Docker based execution
-Here the tests will run on a docker container.    
-You cannot see the execution real time as it is running inside a container and is headless.
+Here the tests will run on a docker container.    .
 ```
 docker pull maven:3.8.1-openjdk-16-slim  #only needed once
 docker run --rm -it -v "$PWD":/usr/src -w /usr/src maven:3.8.1-openjdk-16-slim mvn clean test;
