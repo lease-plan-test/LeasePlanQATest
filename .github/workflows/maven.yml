@@ -25,4 +25,4 @@ jobs:
         uses: deblockt/cucumber-report-annotations-action@v1.7
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
-          report_paths: '**/target/lp_reports/lp_report.json'
+          path: '**/target/lp_reports/lp_report.json'
